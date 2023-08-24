@@ -20,10 +20,10 @@ class Info:
 		return f"{self.surname:15} {self.name:10} {self.patronymic:15} {self.company:30} {self.work_number:20} {self.own_number:20}"
 
 
-PAGE_SIZE=10
-page_number=0
+PAGE_SIZE:int=10
+page_number:int=0
 #объект, использующийся для шапки вывода данных
-ex=Info("surname","name","patronymic","company","work_number","own_number")
+ex:Info=Info("surname","name","patronymic","company","work_number","own_number")
 
 #Функция для постраничного вывода данных переданного списка, для реализации постраничности используется переменная page_number
 def output_info(info:list)->None:
